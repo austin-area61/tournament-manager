@@ -4,7 +4,7 @@ import PlayerStatsForm from './components/PlayerStatsForm';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <PlayerStatsForm />
     </div>
   );
