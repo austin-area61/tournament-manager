@@ -15,3 +15,8 @@ const PlayerStatsForm = () => {
   const handleChange = (e) => {
     setPlayerData({ ...playerData, [e.target.name]: e.target.value });
   };
+//handling form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(playerData);  // This is where we'll handle form submission later
+  };
