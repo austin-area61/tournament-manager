@@ -1,8 +1,7 @@
-// src/components/PlayerStatsForm.js
 import React, { useState } from 'react';
 import { TextField, Button, Grid, Typography, Container } from '@mui/material';
 
-const PlayerStatsForm = () => {
+const PlayerStatsForm = ({ onAddPlayer }) => {
   const [playerData, setPlayerData] = useState({
     name: '',
     winLossRatio: '',
@@ -18,7 +17,15 @@ const PlayerStatsForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(playerData);  // This is where we'll handle form submission later
+    onAddPlayer(playerData);
+    setPlayerData({
+      name: '',
+      winLossRatio: '',
+      kdRatio: '',
+      accuracy: '',
+      headshotRatio: '',
+      preferredWeapon: ''
+    });
   };
 
   return (
