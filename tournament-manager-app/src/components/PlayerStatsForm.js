@@ -113,3 +113,5 @@ const PlayerStatsForm = () => {
     </Container>
   );
 };
+
+export default PlayerStatsForm;
