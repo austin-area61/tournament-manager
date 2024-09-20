@@ -3,7 +3,7 @@ const express = require('express');
 const Player = require('../models/Player');
 const router = express.Router();
 
-// Adding a player
+// Add a player
 router.post('/add', async (req, res) => {
   const { name, winLossRatio, kdRatio, accuracy, headshotRatio, preferredWeapon } = req.body;
 

@@ -1,3 +1,5 @@
+// backend/models/Player.js
+
 const mongoose = require('mongoose');
 
 const playerSchema = new mongoose.Schema({
@@ -27,4 +29,6 @@ const playerSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('Player', playerSchema);
+const Player = mongoose.model('Player', playerSchema);
+
+module.exports = Player;
